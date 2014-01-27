@@ -1,0 +1,20 @@
+@mixin text-inputs {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"] {
+    @content;
+  }
+}
+
+@include text-inputs {
+  border: 1px solid $light-grey
+  padding: 4px 6px
+  margin: 0
+}
+
+form
+  .row
+    display: block
+    margin: 0 0 10px
