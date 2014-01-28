@@ -1,18 +1,23 @@
-@mixin text-inputs {
+@mixin text-inputs
   input[type="text"],
   input[type="password"],
   input[type="email"],
   input[type="url"],
-  input[type="search"] {
-    @content;
-  }
-}
+  input[type="search"]
+    @content
 
-@include text-inputs {
-  border: 1px solid $light-grey
-  padding: 4px 6px
++text-inputs
+  border: 1px solid darken($light-grey, 5%)
+  padding: 6px 8px
+  font-size: $font-medium
+  font-family: $font-family-base
   margin: 0
-}
+  background-color: white
+  +box-shadow(none)
+
+  &:focus
+    border: 1px solid $medium-grey
+    outline: none
 
 form
   .row
