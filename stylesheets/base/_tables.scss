@@ -1,0 +1,38 @@
+.table {
+  width: 100%;
+
+  &.center {
+    th, td {
+      text-align: center;
+    }
+  }
+
+  th {
+    font-weight: bold;
+    text-align: left;
+    background-color: $smoke;
+    white-space: nowrap;
+  }
+
+  td {
+    border-bottom: 1px solid $smoke;
+  }
+
+  tr:hover {
+    td {
+      background-color: lighten($smoke, 4%);
+    }
+  }
+
+  td, th {
+    padding: 12px 8px;
+
+    &:first-child {
+      border-left: 1px solid $smoke;
+    }
+
+    &:last-child {
+      border-right: 1px solid $smoke;
+    }
+  }
+}

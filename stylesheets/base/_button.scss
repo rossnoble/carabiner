@@ -1,0 +1,80 @@
+@mixin button($color) {
+  font-family: $font-base;
+  font-size: $font-medium;
+  font-weight: bold;
+  text-align: center;
+  height: $form-element-height;
+  border-radius: $border-radius;
+  background-color: $color;
+  padding: 0 18px;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  display: inline-block;
+  border: 1px solid darken($color, 5%);
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: lighten($color, 3%);
+  }
+
+  &:active {
+    background: darken($color, 3%);
+  }
+}
+
+// Default
+
+.btn {
+  @include button($blue);
+  color: white;
+}
+
+// Input buttons and anchor tags handle line-height differently.
+a.btn {
+  line-height: $form-element-height;
+}
+
+input.btn,
+button.btn {
+  line-height: 1;
+}
+
+// Colors
+
+.btn-white {
+  @include button(white);
+  color: $blue;
+}
+
+.btn-grey {
+  @include button($smoke);
+}
+
+.btn-red {
+  @include button($red);
+}
+
+.btn-blue-secondary {
+  @include button($blue-secondary);
+}
+
+// Sizes
+
+.btn-wide {
+  padding: 0 52px;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-small {
+  height: $form-element-height-small;
+  padding: 0 18px;
+}
+
+a.btn-small {
+  line-height: $form-element-height-small;
+}

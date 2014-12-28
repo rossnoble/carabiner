@@ -1,0 +1,55 @@
+@mixin text-inputs {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"] {
+    @content;
+  }
+}
+
+@include text-inputs {
+  font-family: $font-base;
+  font-size: $font-medium;
+  line-height: 1;
+  height: $form-element-height;
+  border-radius: $border-radius;
+  margin: 0;
+  padding: 0 12px;
+  outline: 0;
+  background-color: $white;
+  border: 1px solid $silver;
+  border-radius: $border-radius;
+  color: $charcoal;
+
+  &.input-full {
+    width: 100%;
+  }
+
+  &[readonly], &[readonly="readonly"] {
+    background-color: $smoke;
+  }
+}
+
+label {
+  &.label-block {
+    display: block;
+    padding: 5px 0;
+    text-align: left;
+  }
+}
+
+form {
+  .row {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+}
+
+input[type="password"] {
+  letter-spacing: 5px;
+
+  @include placeholder {
+    letter-spacing: 0;
+  }
+}

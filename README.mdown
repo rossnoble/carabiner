@@ -1,4 +1,15 @@
 # Sassyplate
 
-Boilerplate for SASS.
+Boilerplate for SASS/SCSS. Not a full fledged framework, but just enough to get you started.
 
+Includes the following components:
+
+- reset
+- grid (responsive)
+- colors
+- util classes
+- print styles
+- buttons
+- tables
+- badges
+- flash messages

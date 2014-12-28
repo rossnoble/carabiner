@@ -1,0 +1,47 @@
+.flash {
+  text-align: center;
+  padding: 15px;
+  margin: 0 0 10px;
+  border-radius: $border-radius;
+  color: $white;
+  font-weight: bold;
+
+  &.flash-fat {
+    padding: 25px 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.flash-alert {
+    background-color: $red;
+  }
+
+  &.flash-notice {
+    background-color: $green;
+  }
+
+  &.flash-meek {
+    background-color: $onyx;
+  }
+
+  .close {
+    float: right;
+    font-size: 24px;
+    line-height: 0.5;
+    color: $white;
+
+    &:before {
+      content: "\000D7"; // times symbol
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.flash-container {
+  margin: 0 0 20px;
+}

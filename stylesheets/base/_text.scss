@@ -1,0 +1,116 @@
+body {
+  font-family: $font-base;
+  color: $charcoal;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 15px;
+  font-weight: bold;
+  line-height: $line-height-titles;
+
+  &.subtitle {
+    font-weight: normal;
+  }
+}
+
+h1 {
+  font-size: $font-xxlarge;
+
+  &.title {
+    font-weight: normal;
+    color: $blue;
+    margin-bottom: 25px;
+  }
+}
+
+h2 {
+  font-size: $font-xlarge;
+}
+
+h3 {
+  font-size: $font-large;
+}
+
+p {
+  font-size: $font-medium;
+  line-height: $line-height-default;
+  margin: 0 0 15px;
+}
+
+small {
+  font-size: $font-small;
+}
+
+%unstyled {
+  list-style-type: none;
+  margin: 0;
+
+  li {
+    margin: 0;
+  }
+}
+
+ul, ol {
+  margin: 0 0 20px 55px;
+
+  &.unstyled {
+    @extend %unstyled;
+  }
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li {
+  font-size: $font-medium;
+  line-height: $line-height-default;
+  margin-bottom: 5px;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $smoke;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.indent {
+  margin-left: 40px;
+
+  &.indent-padded {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.block {
+  display: block;
+}

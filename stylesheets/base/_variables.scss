@@ -1,0 +1,28 @@
+// Basic UI element sizing
+$border-radius: 3px;
+$line-height-default: 1.5;
+$line-height-titles: 1.25;
+$form-element-height: 50px;
+$form-element-height-small: 32px;
+
+// Fonts
+$font-base: Helvertica, Arial, sans;
+
+$font-tiny: 12px;
+$font-small: 13px;
+$font-medium: 15px;
+$font-large: 18px;
+$font-xlarge: 24px;
+$font-xxlarge: 34px;
+
+// Grid system
+$grid-column-gutter: 15px;
+$grid-column-width: 82px;
+
+$mobile-container:  100%;
+$tablet-container:  720px;
+$desktop-container: ($grid-column-width * 12) + ($grid-column-gutter * 2);
+
+$mobile-breakpoint:  ($tablet-container + 19px);
+$tablet-breakpoint:  ($tablet-container + 20px);
+$desktop-breakpoint: ($desktop-container);
