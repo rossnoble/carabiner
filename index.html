@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Headstand</title>
-  <link href="./stylesheets/main.css" media="all" rel="stylesheet" type="text/css">
+  <title>Headstand | CSS Framework </title>
+  <link href="./stylesheets/docs.css" media="all" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <h1>Headstand</h1>
+<div class="header">
+  <div class="container">
+    <h1 class="title">Headstand</h1>
 
-      <hr>
+    <h2 class="subtitle">Welcome to Headstand</h2>
 
-      <h2>Text</h2>
+    <div class="row">
+      <div class="col col-6">
+        <p>Headstand is a collection of lightweight boilerplate [Sass](http://sass-lang.com) files for new projects. It's not a full fledged framework; it's a starting point.</p>
+
+        <p>All of the files includes in the library are designed to be modified and altered as you craft the look and feel of user interface.</p>
+
+        <h2 class="subtitle">Table of Contents</h2>
+
+        <ul class="toc">
+          <li><a href="#text">Text</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#tables">Tables</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="body">
+  <div class="container">
+    <section id="text">
+      <h2 class="subtitle">Text</h2>
 
       <h1>This is a h1 Title</h1>
       <h2>This is a h2 Title</h2>
@@ -21,9 +42,18 @@
       <h4>This is a h4 Title</h4>
       <h5>This is a h5 Title</h5>
 
-      <hr>
+      <p>This is a body paragraph with a <a href="#">link</a> inside it. This is a body paragraph with a <a href="#">link</a> inside it.</p>
 
-      <h2>Buttons</h2>
+      <ul>
+        <li>I'm a list item</li>
+        <li>I'm a list item</li>
+        <li>I'm a list item</li>
+        <li>I'm a list item</li>
+      </ul>
+    </section>
+
+    <section id="buttons">
+      <h2 class="subtitle">Buttons</h2>
 
       <p>
         <button>Button unstyled</button>
@@ -42,10 +72,10 @@
         <a class="btn btn-white btn-small">Small Button</a>
         <a class="btn btn-grey btn-grey btn-small">Small Button</a>
       </p>
+    </section>
 
-      <hr>
-
-      <h2>Forms</h2>
+    <section id="forms">
+      <h2 class="subtitle">Forms</h2>
 
       <form class="form" action="#">
         <div class="row">
@@ -70,14 +100,10 @@
         </div>
 
       </form>
+    </section>
 
-      <hr>
-
-      <h2>Base elements</h2>
-
-      <a href="#">I'm a link, click me!</a>
-
-      <h2>Tables</h2>
+    <section id="tables">
+      <h2 class="subtitle">Tables</h2>
 
       <table class="table">
         <tr>
@@ -99,17 +125,15 @@
           <td>There</td>
         </tr>
       </table>
+    </section>
+  </div>
+</div>
 
-      <h2>Lists</h2>
+<div class="footer">
+  <div class="container">
+    <p class="float-right"><a href="https://github.com/rossnoble/headstand">View on Github</a></p>
 
-      <ul>
-        <li>I'm a list item</li>
-        <li>I'm a list item</li>
-        <li>I'm a list item</li>
-        <li>I'm a list item</li>
-      </ul>
-
-    </div>
+    <p>Built by <a href="http://rossnoble.net">Ross Noble</a> in Montreal.</p>
   </div>
 </div>
 

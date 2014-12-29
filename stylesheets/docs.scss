@@ -1,0 +1,66 @@
+// Docs
+
+@import "base/reset";
+@import "base/variables";
+@import "base/colors";
+@import "base/print";
+@import "base/text";
+@import "base/utils";
+@import "base/badges";
+@import "base/button";
+@import "base/flash";
+@import "base/fonts";
+@import "base/form";
+@import "base/grid-mobile";
+@import "base/grid-tablet";
+@import "base/grid";
+@import "base/layout";
+@import "base/tables";
+
+.header {
+  background-color: $onyx;
+  color: $white;
+  padding: 40px 0;
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .toc {
+    margin-top: 20px;
+
+    a {
+      color: $smoke;
+    }
+  }
+}
+
+.body {
+  section {
+    padding: 40px 0;
+
+    &.inverse {
+      background-color: $smoke;
+    }
+
+    .subtitle {
+      border-bottom: 2px solid $silver;
+    }
+  }
+}
+
+.footer {
+  background-color: $onyx;
+  padding: 40px 0;
+
+  a {
+    color: $smoke;
+  }
+
+  p {
+    font-size: $font-small;
+    margin: 0;
+    color: $stone;
+  }
+}

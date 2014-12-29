@@ -7,20 +7,10 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 15px;
   font-weight: bold;
   line-height: $line-height-titles;
-
-  &.subtitle {
-    font-weight: normal;
-  }
 }
 
 h1 {
   font-size: $font-xxlarge;
-
-  &.title {
-    font-weight: normal;
-    color: $blue;
-    margin-bottom: 25px;
-  }
 }
 
 h2 {

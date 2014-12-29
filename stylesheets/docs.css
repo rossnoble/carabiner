@@ -67,15 +67,9 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 15px;
   font-weight: bold;
   line-height: 1.25; }
-  h1.subtitle, h2.subtitle, h3.subtitle, h4.subtitle, h5.subtitle {
-    font-weight: normal; }
 
 h1 {
   font-size: 34px; }
-  h1.title {
-    font-weight: normal;
-    color: #0071c5;
-    margin-bottom: 25px; }
 
 h2 {
   font-size: 24px; }
@@ -1095,3 +1089,32 @@ html, body {
       border-left: 1px solid #f0f0f0; }
     .table td:last-child, .table th:last-child {
       border-right: 1px solid #f0f0f0; }
+
+.header {
+  background-color: #282828;
+  color: white;
+  padding: 40px 0; }
+  .header .title {
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  .header .toc {
+    margin-top: 20px; }
+    .header .toc a {
+      color: #f0f0f0; }
+
+.body section {
+  padding: 40px 0; }
+  .body section.inverse {
+    background-color: #f0f0f0; }
+  .body section .subtitle {
+    border-bottom: 2px solid #c8c8c8; }
+
+.footer {
+  background-color: #282828;
+  padding: 40px 0; }
+  .footer a {
+    color: #f0f0f0; }
+  .footer p {
+    font-size: 13px;
+    margin: 0;
+    color: #6e6e6e; }
