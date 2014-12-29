@@ -1,6 +1,6 @@
-# Sassyplate
+# Headstand
 
-Sassyplate is a collection of lightweight boilerplate [Sass](http://sass-lang.com)
+Headstand is a collection of lightweight boilerplate [Sass](http://sass-lang.com)
 files for new projects. It's not a full fledged framework; it's a starting point.
 
 All of the files includes in the library are designed to be modified and altered
@@ -32,11 +32,11 @@ wonderful [base](https://github.com/matthewhartman/base) framework.
 
 Clone or install the library, then copy the files into your project.
 
-* Clone: `git clone git@github.com:rossnoble/sassyplate.git`
-* Bower: `bower install git@github.com:rossnoble/sassyplate.git`
+* Clone: `git clone git@github.com:rossnoble/headstand.git`
+* Bower: `bower install git@github.com:rossnoble/headstand.git`
 
 ```
-cp sassyplate/base/* /your/assets/directory
+cp headstand/base/* /your/assets/directory
 ```
 
 Then import the components you want to use into your Sass files. See `main.scss`
@@ -45,9 +45,9 @@ for an example.
 ```
 // your-project.scss
 
-@import 'variables';
-@import 'utils';
-@import 'reset';
+@import 'base/variables';
+@import 'base/utils';
+@import 'base/reset';
 
 // Other components you want
 ```
