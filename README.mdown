@@ -1,15 +1,48 @@
 # Sassyplate
 
-Boilerplate for SASS/SCSS. Not a full fledged framework, but just enough to get you started.
+Sassyplate is a collection of lightweight boilerplate [Sass](http://sass-lang.com)
+files for new projects. It's not a full fledged framework; it's a starting point.
 
-Includes the following components:
+All of the files includes in the library are designed to be modified and altered
+as you craft the look and feel of user interface.
 
-- reset
-- grid (responsive)
-- colors
-- util classes
-- print styles
-- buttons
-- tables
-- badges
-- flash messages
+## What's included
+
+```
+- variables.scss
+- reset.scss
+- grid.scss
+- grid-tablet.scss
+- grid-mobile.scss
+- colors.scss
+- utils.scss
+- print.scss
+- form.scss
+- text.scss
+- button.scss
+- tables.scss
+- badges.scss
+- flash.scss
+```
+
+The grid is a modified version of the one included in Matthew Hartmans's
+wonderful [base](https://github.com/matthewhartman/base) framework.
+
+## Install
+
+Clone or install the library, then copy the files into your project.
+
+* Clone: `git clone git@github.com:rossnoble/sassyplate.git`
+* Bower: `bower install git@github.com:rossnoble/sassyplate.git`
+
+Then import the components you want to use. See `main.scss` for an example.
+
+```
+
+@import 'variables';
+@import 'utils';
+@import 'reset';
+
+// Other components you want
+
+```
