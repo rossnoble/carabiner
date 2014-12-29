@@ -35,14 +35,19 @@ Clone or install the library, then copy the files into your project.
 * Clone: `git clone git@github.com:rossnoble/sassyplate.git`
 * Bower: `bower install git@github.com:rossnoble/sassyplate.git`
 
-Then import the components you want to use. See `main.scss` for an example.
+```
+cp sassyplate/base/* /your/assets/directory
+```
+
+Then import the components you want to use into your Sass files. See `main.scss`
+for an example.
 
 ```
+// your-project.scss
 
 @import 'variables';
 @import 'utils';
 @import 'reset';
 
 // Other components you want
-
 ```
