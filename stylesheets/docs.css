@@ -1225,7 +1225,8 @@ html, body {
     font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 12px; }
+    font-size: 12px;
+    white-space: nowrap; }
     .example-grid .col:first-child {
       background-color: #f0f0f0; }
   .example-grid > div {

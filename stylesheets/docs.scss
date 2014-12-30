@@ -120,6 +120,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: $font-tiny;
+    white-space: nowrap;
 
     &:first-child {
       background-color: $smoke;
