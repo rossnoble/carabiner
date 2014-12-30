@@ -50,14 +50,15 @@ button.btn {
 
 .btn-grey {
   @include button($smoke);
+  color: $charcoal;
 }
 
 .btn-red {
   @include button($red);
 }
 
-.btn-blue-secondary {
-  @include button($blue-secondary);
+.btn-green {
+  @include button($green);
 }
 
 // Sizes

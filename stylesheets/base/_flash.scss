@@ -14,15 +14,23 @@
     margin-bottom: 0;
   }
 
-  &.flash-alert {
-    background-color: $red;
-  }
-
-  &.flash-notice {
+  &.flash-success {
     background-color: $green;
   }
 
-  &.flash-meek {
+  &.flash-warning {
+    background-color: $red;
+  }
+
+  &.flash-alert {
+    background-color: $yellow;
+  }
+
+  &.flash-info {
+    background-color: $blue;
+  }
+
+  &.flash-dark {
     background-color: $onyx;
   }
 

@@ -11,27 +11,50 @@
 @import "base/flash";
 @import "base/fonts";
 @import "base/form";
+@import "base/grid";
 @import "base/grid-mobile";
 @import "base/grid-tablet";
-@import "base/grid";
 @import "base/layout";
 @import "base/tables";
 
 .header {
   background-color: $onyx;
   color: $white;
-  padding: 40px 0;
+  padding: 50px 0;
 
-  .title {
-    text-transform: uppercase;
-    margin-bottom: 40px;
+  .logo {
+    display: inline-block;
+    background-image: url('/images/logo-white.png');
+    width: 282px;
+    height: 49px;
+    text-decoration: none;
   }
+}
 
-  .toc {
-    margin-top: 20px;
+.nav {
+  margin-bottom: 40px;
 
-    a {
-      color: $smoke;
+  ul {
+    float: right;
+    @extend %unstyled;
+    line-height: 49px;
+
+    li {
+      text-transform: uppercase;
+      font-size: $font-small;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 25px;
+
+      a {
+        color: $white;
+        text-decoration: none;
+        padding-bottom: 5px;
+
+        &:hover {
+          border-bottom: 1px solid $white;
+        }
+      }
     }
   }
 }
@@ -43,9 +66,28 @@
     &.inverse {
       background-color: $smoke;
     }
+  }
 
-    .subtitle {
-      border-bottom: 2px solid $silver;
+  .subtitle {
+    position: relative;
+    text-transform: uppercase;
+    font-size: $font-medium;
+    border-bottom: 2px solid $silver;
+    padding-bottom: 2px;
+    margin-bottom: 25px;
+
+    a {
+      color: $charcoal;
+      text-decoration: none;
+
+
+      &:hover {
+        &:before {
+          content: '\00023';
+          position: absolute;
+          left: -15px;
+        }
+      }
     }
   }
 }

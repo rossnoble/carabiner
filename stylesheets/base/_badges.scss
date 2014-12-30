@@ -12,14 +12,18 @@
   }
 
   &.badge-warning {
-    background-color: $yellow;
-  }
-
-  &.badge-danger {
     background-color: $red;
   }
 
+  &.badge-alert {
+    background-color: $yellow;
+  }
+
   &.badge-info {
-    background-color: $blue-secondary;
+    background-color: $blue;
+  }
+
+  &.badge-dark {
+    background-color: $onyx;
   }
 }

@@ -3,7 +3,8 @@
   input[type="password"],
   input[type="email"],
   input[type="url"],
-  input[type="search"] {
+  input[type="search"],
+  textarea {
     @content;
   }
 }
@@ -21,6 +22,7 @@
   border: 1px solid $silver;
   border-radius: $border-radius;
   color: $charcoal;
+  width: 300px;
 
   &.input-full {
     width: 100%;
@@ -29,6 +31,13 @@
   &[readonly], &[readonly="readonly"] {
     background-color: $smoke;
   }
+}
+
+textarea {
+  line-height: $line-height-default;
+  height: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 label {

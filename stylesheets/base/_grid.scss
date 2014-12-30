@@ -1,7 +1,4 @@
 // Grid System
-// Courtesy of https://github.com/matthewhartman/base
-
-// Variables
 
 .section { position: relative; }
 
@@ -249,17 +246,11 @@
 .pull-3-4 { @extend .pull-9; }
 
 // Rows
-.row {
+.grid-row {
   @include clearfix;
   padding: 0;
   margin-left: -$grid-column-gutter;
   margin-right: -$grid-column-gutter;
-}
-
-.row-padded {
-  @include clearfix;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .no-desktop { display: none; }
