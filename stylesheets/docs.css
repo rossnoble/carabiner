@@ -437,6 +437,11 @@ form .row {
   margin: 0 0 10px;
   padding: 0; }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 input[type="password"] {
   letter-spacing: 5px; }
   input[type="password"]::-webkit-input-placeholder {
@@ -1232,6 +1237,9 @@ html, body {
     .example-grid > div:after {
       clear: both; }
 
+@media only screen and (max-width: 739px) {
+  .example-grid .col {
+    font-size: 10px; } }
 .footer {
   background-color: #282828;
   padding: 40px 0; }

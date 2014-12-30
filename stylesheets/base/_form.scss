@@ -55,6 +55,12 @@ form {
   }
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 input[type="password"] {
   letter-spacing: 5px;
 

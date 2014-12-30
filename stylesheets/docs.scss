@@ -132,6 +132,12 @@
   }
 }
 
+@include when-mobile {
+  .example-grid .col {
+    font-size: 10px;
+  }
+}
+
 .footer {
   background-color: $onyx;
   padding: 40px 0;
