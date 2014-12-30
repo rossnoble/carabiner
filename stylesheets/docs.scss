@@ -25,23 +25,24 @@
   .logo {
     display: inline-block;
     background-image: url('../images/logo-white.png');
-    width: 255px;
-    height: 49px;
+    width: 248px;
+    height: 63px;
     text-decoration: none;
   }
 
   .description a {
-    color: lighten($blue, 10%);
+    color: lighten($blue, 15%);
   }
 }
 
 .nav {
   margin-bottom: 40px;
+  @include clearfix;
 
-  ul {
-    float: right;
+  .menu {
     @extend %unstyled;
-    line-height: 49px;
+    text-align: right;
+    line-height: 63px;
 
     li {
       text-transform: uppercase;
@@ -114,5 +115,23 @@
     font-size: $font-small;
     margin: 0;
     color: $stone;
+  }
+}
+
+@include when-mobile {
+  .header {
+    text-align: center;
+  }
+
+  .nav .menu {
+    text-align: center;
+    li {
+      margin: 0 15px;
+    }
+  }
+
+  #buttons .btn {
+    display: block;
+    margin-bottom: 7px;
   }
 }

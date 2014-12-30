@@ -95,10 +95,10 @@ p {
 small {
   font-size: 13px; }
 
-ul.unstyled, ol.unstyled, .nav ul {
+ul.unstyled, ol.unstyled, .nav .menu {
   list-style-type: none;
   margin: 0; }
-  ul.unstyled li, ol.unstyled li, .nav ul li {
+  ul.unstyled li, ol.unstyled li, .nav .menu li {
     margin: 0; }
 
 ul, ol {
@@ -1153,28 +1153,34 @@ html, body {
   .header .logo {
     display: inline-block;
     background-image: url("../images/logo-white.png");
-    width: 255px;
-    height: 49px;
+    width: 248px;
+    height: 63px;
     text-decoration: none; }
   .header .description a {
-    color: #1a8cff; }
+    color: #3499ff; }
 
 .nav {
-  margin-bottom: 40px; }
-  .nav ul {
-    float: right;
-    line-height: 49px; }
-    .nav ul li {
+  margin-bottom: 40px;
+  zoom: 1; }
+  .nav:before, .nav:after {
+    content: '';
+    display: table; }
+  .nav:after {
+    clear: both; }
+  .nav .menu {
+    text-align: right;
+    line-height: 63px; }
+    .nav .menu li {
       text-transform: uppercase;
       font-size: 13px;
       font-weight: bold;
       display: inline-block;
       margin-left: 25px; }
-      .nav ul li a {
+      .nav .menu li a {
         color: white;
         text-decoration: none;
         padding-bottom: 5px; }
-        .nav ul li a:hover {
+        .nav .menu li a:hover {
           border-bottom: 1px solid white; }
 
 .body section {
@@ -1207,3 +1213,16 @@ html, body {
     font-size: 13px;
     margin: 0;
     color: #6e6e6e; }
+
+@media only screen and (max-width: 739px) {
+  .header {
+    text-align: center; }
+
+  .nav .menu {
+    text-align: center; }
+    .nav .menu li {
+      margin: 0 15px; }
+
+  #buttons .btn {
+    display: block;
+    margin-bottom: 7px; } }

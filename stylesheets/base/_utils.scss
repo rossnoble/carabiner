@@ -29,6 +29,21 @@
   }
 }
 
+@mixin when-mobile {
+  @media only screen and
+  (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin when-tablet {
+  @media only screen and
+  (min-width: $tablet-breakpoint) and
+  (max-width: $desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
 .hidden {
   display: none;
 }
