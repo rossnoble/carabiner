@@ -67,7 +67,28 @@
             <li>I'm a list item</li>
           </ul>
 
-          <p>Paragraphs can include inline <code>code blocks that look like this</code>.</p>
+          <p>Paragraphs with inline <code>code blocks</code> look like this.</p>
+
+          <blockquote>
+            <p>When one man, for whatever reason, has the opportunity to lead an extraordinary life, he has no right to keep it to himself.</p>
+            <cite>-- Jacques Cousteau</cite>
+          </blockquote>
+
+          <p>A multi line code block might look like this:</p>
+
+          <pre><code>function Person(name) {
+  this.name = name;
+
+  this.speak = function () {
+    return this.name;
+  };
+}
+
+var alice = new Person({
+  name: "Alice"
+});
+
+alice.speak();</code></pre>
         </section>
 
         <section id="buttons">
@@ -141,24 +162,90 @@
             <a href="#tables">Tables</a>
           </h2>
 
+          <p>This is a basic table:</p>
+
           <table class="table">
             <tr>
-              <th>Hiiii</th>
-              <th>There</th>
-              <th>There</th>
-              <th>There</th>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
             </tr>
             <tr>
-              <td>Hiiii</td>
-              <td>There</td>
-              <td>There</td>
-              <td>There</td>
+              <td>Apples</td>
+              <td>6</td>
+              <td>$0.50</td>
+              <td>$3.00</td>
             </tr>
             <tr>
-              <td>Hiiii</td>
-              <td>There</td>
-              <td>There</td>
-              <td>There</td>
+              <td>Oranges</td>
+              <td>4</td>
+              <td>$1.00</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Bananas</td>
+              <td>5</td>
+              <td>$0.75</td>
+              <td>$3.75</td>
+            </tr>
+          </table>
+
+          <p>This is a bordered table, created by adding the <code>.table-bordered</code> class:</p>
+
+          <table class="table table-bordered">
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Apples</td>
+              <td>6</td>
+              <td>$0.50</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Oranges</td>
+              <td>4</td>
+              <td>$1.00</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Bananas</td>
+              <td>5</td>
+              <td>$0.75</td>
+              <td>$3.75</td>
+            </tr>
+          </table>
+
+          <p>This is a striped table, created by adding the <code>.table-striped</code> class:</p>
+
+          <table class="table table-striped">
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Apples</td>
+              <td>6</td>
+              <td>$0.50</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Oranges</td>
+              <td>4</td>
+              <td>$1.00</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Bananas</td>
+              <td>5</td>
+              <td>$0.75</td>
+              <td>$3.75</td>
             </tr>
           </table>
         </section>
