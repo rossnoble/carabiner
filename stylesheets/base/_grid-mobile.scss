@@ -26,7 +26,7 @@
 }
 
 // Mobile Grid
-.mobile-col-1-2 {
+.mobile-col-1-2, .mobile-half {
   width: 50%; // Fallback if calc() is not supported
   width: calc(100% / 12 * 6);
   width: -webkit-calc(100% / 12 * 6);
@@ -114,7 +114,7 @@
   clear: both;
   float: none;
   width: 100%;
-  margin: 0.2em 0 0 0;
+  margin: 0;
   display: block;
 }
 .mobile-full:first-child { margin-top: 0; }
@@ -131,7 +131,7 @@
 .mobile-no-margin { margin: 0; }
 .mobile-no-padding { padding: 0; }
 
-.no-mobile { display: none; }
+.hide-mobile { display: none; }
 .show-mobile { display: block; }
 
 }

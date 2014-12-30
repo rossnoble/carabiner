@@ -253,7 +253,8 @@
   margin-right: -$grid-column-gutter;
 }
 
-.no-desktop { display: none; }
+.hide-desktop { display: none; }
+.show-desktop { display: block; }
 
 // Remove Margin / Padding
 .no-margin { margin: 0; }

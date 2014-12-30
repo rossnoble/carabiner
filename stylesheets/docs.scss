@@ -103,6 +103,27 @@
   }
 }
 
+.example-grid {
+  margin-bottom: 15px;
+
+  .col {
+    background-color: $silver;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:first-child {
+      background-color: $smoke;
+    }
+  }
+
+  & > div {
+    @include clearfix;
+    margin-bottom: 5px;
+  }
+}
+
 .footer {
   background-color: $onyx;
   padding: 40px 0;
