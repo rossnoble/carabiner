@@ -29,6 +29,10 @@
     height: 49px;
     text-decoration: none;
   }
+
+  .description a {
+    color: lighten($blue, 10%);
+  }
 }
 
 .nav {
@@ -65,6 +69,12 @@
 
     &.inverse {
       background-color: $smoke;
+    }
+  }
+
+  .toc {
+    li {
+      margin-bottom: 7px;
     }
   }
 

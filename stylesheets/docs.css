@@ -1128,6 +1128,8 @@ html, body {
     width: 282px;
     height: 49px;
     text-decoration: none; }
+  .header .description a {
+    color: #1a8cff; }
 
 .nav {
   margin-bottom: 40px; }
@@ -1151,6 +1153,8 @@ html, body {
   padding: 40px 0; }
   .body section.inverse {
     background-color: #f0f0f0; }
+.body .toc li {
+  margin-bottom: 7px; }
 .body .subtitle {
   position: relative;
   text-transform: uppercase;
