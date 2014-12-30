@@ -4,7 +4,7 @@
   <title>Caribiner | CSS Framework </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./stylesheets/docs.css" media="all" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon32x32.ico">
 </head>
 <body>
 
@@ -42,11 +42,11 @@
         <section>
           <ul class="toc unstyled">
             <li><a href="#text">Text</a></li>
+            <li><a href="#grid">Grid</a></li>
             <li><a href="#buttons">Buttons</a></li>
             <li><a href="#forms">Forms</a></li>
             <li><a href="#badges">Badges</a></li>
             <li><a href="#flash">Flash Messages</a></li>
-            <li><a href="#flash">Grid</a></li>
           </ul>
         </section>
       </div>
@@ -106,7 +106,7 @@ alice.speak();</code></pre>
 
           <pre><code>&lt;div class="container"&gt;
   &lt;-- insert your content here --&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
 
           <p>If you want to use columns, you have to nest them in a <code>.grid-row</code> container to make sure you don't double the gutter.</p>
 
@@ -119,7 +119,7 @@ alice.speak();</code></pre>
       &lt;-- insert your content here --&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;</pre></code>
+&lt;/div&gt;</code></pre>
 
           <p>They'll come out looking something like this:</p>
 
@@ -236,7 +236,17 @@ alice.speak();</code></pre>
             </div>
           </div>
 
-          <p>You can safely nest grids inside of grids as well.</p>
+          <p>Grids can be safely nested inside of grids as well.</p>
+
+          <h3>Customization</h3>
+
+          <p>The dimension of the grid are defined in <code>variables.scss</code> and can be modified as desired. Look for these variables:</p>
+
+          <pre><code>$grid-column-gutter: 15px;
+$grid-column-width: 82px;
+
+$mobile-container:  100%;
+$tablet-container:  720px;</code></pre>
         </section>
 
         <section id="buttons">

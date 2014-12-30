@@ -149,6 +149,7 @@ blockquote {
     text-indent: 10px; }
 
 code {
+  color: #3c3c3c;
   font-family: Monaco, sans;
   font-size: 13px;
   background-color: #f0f0f0;
@@ -1156,12 +1157,16 @@ html, body {
   .header .logo {
     display: inline-block;
     background-image: url("../images/logo-white.png");
+    background-size: 100%;
     width: 248px;
     height: 63px;
     text-decoration: none; }
   .header .description a {
     color: #3499ff; }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header .logo {
+    background-image: url("../images/logo-white@2x.png"); } }
 .nav {
   margin-bottom: 40px;
   zoom: 1; }

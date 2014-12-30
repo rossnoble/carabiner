@@ -25,6 +25,7 @@
   .logo {
     display: inline-block;
     background-image: url('../images/logo-white.png');
+    background-size: 100%;
     width: 248px;
     height: 63px;
     text-decoration: none;
@@ -32,6 +33,12 @@
 
   .description a {
     color: lighten($blue, 15%);
+  }
+}
+
+@include when-retina {
+  .header .logo {
+    background-image: url('../images/logo-white@2x.png');
   }
 }
 

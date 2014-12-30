@@ -122,6 +122,7 @@ blockquote {
 }
 
 code {
+  color: darken($charcoal, 6%);
   font-family: $font-mono;
   font-size: $font-small;
   background-color: $smoke;
