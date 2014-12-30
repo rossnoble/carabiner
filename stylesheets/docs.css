@@ -1083,7 +1083,6 @@ input[type="password"] {
     clear: both;
     float: none;
     width: 100%;
-    margin: 1em 0 0 0;
     display: block; }
 
   .tablet-full:first-child {
@@ -1215,7 +1214,8 @@ html, body {
     text-align: center;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-size: 12px; }
     .example-grid .col:first-child {
       background-color: #f0f0f0; }
   .example-grid > div {
