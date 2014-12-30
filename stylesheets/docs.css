@@ -1125,7 +1125,7 @@ html, body {
   .header .logo {
     display: inline-block;
     background-image: url("../images/logo-white.png");
-    width: 282px;
+    width: 255px;
     height: 49px;
     text-decoration: none; }
   .header .description a {
