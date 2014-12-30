@@ -1,5 +1,9 @@
 .table {
+  $border-color: darken($smoke, 2%);
+  $header-background: lighten($border-color, 2%);
+  $striped-background: lighten($border-color, 5%);
   width: 100%;
+  margin-bottom: 20px;
 
   &.center {
     th, td {
@@ -10,29 +14,37 @@
   th {
     font-weight: bold;
     text-align: left;
-    background-color: $smoke;
+    background-color: $header-background;
     white-space: nowrap;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
   }
 
   td {
-    border-bottom: 1px solid $smoke;
-  }
-
-  tr:hover {
-    td {
-      background-color: lighten($smoke, 4%);
-    }
+    border-bottom: 1px solid $border-color;
   }
 
   td, th {
-    padding: 12px 8px;
+    padding: 15px 15px;
+  }
 
-    &:first-child {
-      border-left: 1px solid $smoke;
+  &.table-bordered {
+    th, td {
+      border-radius: 0 !important;
+
+      &:first-child {
+        border-left: 1px solid $border-color;
+      }
+
+      &:last-child {
+        border-right: 1px solid $border-color;
+      }
     }
+  }
 
-    &:last-child {
-      border-right: 1px solid $smoke;
+  &.table-striped {
+    tr:nth-child(2n+1) td {
+      background-color: $striped-background;
     }
   }
 }
