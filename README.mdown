@@ -1,7 +1,6 @@
 # Headstand
 
-Headstand is a collection of lightweight boilerplate [Sass](http://sass-lang.com)
-files for new projects. It's not a full fledged framework; it's a starting point.
+Headstand is a collection of lightweight CSS boilerplate components that uses [Sass](http://sass-lang.com). It's an unopionated framework designed to be modified and altered to fit your needs.
 
 All of the files includes in the library are designed to be modified and altered
 as you craft the look and feel of user interface.
