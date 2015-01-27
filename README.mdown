@@ -1,6 +1,6 @@
-# Caribiner
+# Carabiner
 
-Caribiner is a collection of lightweight CSS boilerplate components that uses [Sass](http://sass-lang.com). It's an unopionated framework designed to be modified and altered to fit your needs.
+Carabiner is a collection of lightweight CSS boilerplate components that uses [Sass](http://sass-lang.com). It's an unopionated framework designed to be modified and altered to fit your needs.
 
 All of the files includes in the library are designed to be modified and altered
 as you craft the look and feel of user interface.
@@ -31,11 +31,11 @@ wonderful [base](https://github.com/matthewhartman/base) framework.
 
 Clone or install the library, then copy the files into your project.
 
-* Clone: `git clone git@github.com:rossnoble/caribiner.git`
-* Bower: `bower install git@github.com:rossnoble/caribiner.git`
+* Clone: `git clone git@github.com:rossnoble/carabiner.git`
+* Bower: `bower install git@github.com:rossnoble/carabiner.git`
 
 ```
-cp caribiner/base/* /your/assets/directory
+cp carabiner/base/* /your/assets/directory
 ```
 
 Then import the components you want to use into your Sass files. See `main.scss`
