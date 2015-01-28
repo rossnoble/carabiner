@@ -1180,7 +1180,7 @@ html, body {
     display: inline-block;
     background-image: url("../images/logo-white.png");
     background-size: 100%;
-    width: 248px;
+    width: 259px;
     height: 63px;
     text-decoration: none; }
   .header .description a {
@@ -1188,7 +1188,7 @@ html, body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .header .logo {
-    background-image: url("../images/logo-white@2x.png"); } }
+    background-image: url("../images/logo-white-2x.png"); } }
 .nav {
   margin-bottom: 40px;
   zoom: 1; }
